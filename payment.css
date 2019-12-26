@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body{
+	
+    margin: auto;
+	padding: auto;
+	background-image:url("../images/background.jpg");
+	background-repeat: no-repeat, repeat;
+	height: auto;
+	width:100%;
+	background-size: cover;
+	background-position:top;
+
+
+	
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF7C;
+  color: white;
+  padding: 12px;
+  margin: 10px 130px;
+  border: none;
+  width: 40%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #458DA0;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+.header{
+	
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.header h1{
+		
+		font-family:verdana, geneva, arial, sans-serif;
+		font-size: 2.5vw;
+		margin: 15px;
+		text-align: center;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #2895cc;
+  height: 50px;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: #1684bb;
+  color: black;
+}
+
+.navigation a.active {
+  background-color: #1684bb;
+  color: white;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+.content {
+  max-width: 500px;
+  height: 700px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight:bolder;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

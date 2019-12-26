@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Indian Tourism</title>	
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body">
+<header class="header"><a href="index.html"><h1 style="font-size:3vw;">Welcome To Indian Tourism </h1></a>
+	
+  <div class="navigation" id="nav">
+  <a href="#home" class="active">HOME</a>
+  <a href="packages.html">PACKAGES</a>
+  <a href="destinations.html">DESTINATIONS</a>
+  <a href="services.html">SERVICES</a>
+  <a href="bookingprocess.html">TOUR BOOKING</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</header>
+	<div class="center">
+	<h1 style="font-size:2.5vw;">Let's Travel Together!</h1>
+	</div>
+	
+<script>
+	function myFunction() {
+	  var x = document.getElementById("nav");
+	  if (x.className === "navigation") {
+		x.className += " responsive";
+	  } else {
+		x.className = "navigation";
+	  }
+	}
+</script>
+	
+</body>
+</html>
